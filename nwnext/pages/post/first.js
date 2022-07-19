@@ -8,7 +8,11 @@ export default function FirstPost() {
         <Link href="/">
           <a>Back to home</a>
         </Link>
+        
       </h2>
+      <Link href="/post/csr">
+          <a>Client Side Rendering (csr)</a>
+        </Link>
     </>
   );
 }
