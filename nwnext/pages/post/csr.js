@@ -8,6 +8,7 @@ export default function CsrPage() {
         axios.get('https://worldtimeapi.org/api/ip')
             .then((res) => {
                 setDateTime(res.data.datetime);
+                
             })
             .catch((error) => console.error(error));
     }, []);
@@ -15,9 +16,7 @@ export default function CsrPage() {
         <>
             <h1>Date Time</h1>
             <h2>{dataTime}</h2>
-            <Link href="/post/first">
-                <a>Back to home</a>
-            </Link>
+            
         </>
     )
 }
