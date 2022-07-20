@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Link from 'next/link';
 import axios from "axios";
 export default function CsrPage() {
     console.log("CsrPage");
@@ -14,6 +15,9 @@ export default function CsrPage() {
         <>
             <h1>Date Time</h1>
             <h2>{dataTime}</h2>
+            <Link href="/post/first">
+                <a>Back to home</a>
+            </Link>
         </>
     )
 }
